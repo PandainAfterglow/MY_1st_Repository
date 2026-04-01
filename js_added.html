@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With JS</title>
+    <script>
+        function total()
+            {
+                x = document.getElementById("q").value;
+                y = document.getElementById("p").value;
+                Total_val = x * y;
+                document.write(Total_val);
+            }
+    </script>
+</head>
+<body id="b">
+    <script>
+    /*
+        price = prompt("enter price: ");
+       quantaty = prompt("enter number of items: ");
+        balance = prompt("enter amount of your money");
+        total_price = price * quantaty;
+
+        if(balance >= total_price)
+        {alert("congratulations!");}
+        else
+        {alert("no enough money");}
+    */
+
+    /*   color = prompt("color");
+        document.getElementById("b").style.background = color;
+    */
+    
+
+    </script>
+
+    <form>
+        Quantity: <input type="text" id="q"><br>
+        Price per Item: <input type="text" id="p"><br>
+        <input type="button" value="total price" onclick="total()">
+        <input type="reset"><br>
+        <input type="text" id="t">
+    </form>
+</body>
+</html>
