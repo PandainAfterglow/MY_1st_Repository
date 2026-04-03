@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apr3rd</title>
+    <script>
+        function checkForm(){
+            firstN = document.getElementById("fn").value;
+            lastN = document.getElementById("ln").value;
+            phone = document.getElementById("ph").value;
+            address = document.getElementById("add").value;
+            
+            patt1 = /^[a-zA-Z]+$/;
+            patt2 = /^[0-9]{11}$/;
+            patt3 = /^[a-zA-Z0-9 ]+$/;
+
+            if (!patt1.test(firstN)) {
+                alert("Type Correct Name! example: Tom Smith");
+                return false;
+            }
+
+            if (!patt1.test(lastN)) {
+                alert("Type Correct Name! example: Tom Smith");
+                return false;
+            }
+
+            if (!patt2.test(phone)) {
+                alert("Type correct China Mainland phone number");
+                return false;
+            }
+
+            if (!patt3.test(address)) {
+                alert("address should be a combination of letters, numbers and blank");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return checkForm()">
+        First name: <input type="text" id="fn"><br/>
+        Last name: <input type="text" id="ln"><br/>
+        Phone: <input type="text" id="ph"><br/>
+        Address: <input type="text" id="add"><br/>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
